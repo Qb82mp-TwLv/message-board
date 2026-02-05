@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="C:/原D槽/WeHelp_class/L3_week1/message-board/static/css/index.css">
-        <script src="C:/原D槽/WeHelp_class/L3_week1/message-board/static/js/index.js"></script>
+        <link rel="stylesheet" href="/static/css/index.css">
+        <script defer src="/static/js/index.js"></script>
         <title>Message Board</title>
     </head>
     <body>
@@ -14,15 +14,24 @@
                     <div>留言板：請輸入留言的內容，並選擇要上傳的圖片資訊。</div>
                     <div class="comment-form">
                         <div>留言：</div>
-                        <input type="text">
+                        <input type="text" id="comment-text-input">
                     </div>
                     <div class="image-form">
                         <div>選擇要上傳的圖片檔案：</div>
                         <input type="file" id="image-upload" accept="image/*">
                     </div>
-                    <button type="button">送出</button>
+                    <button type="button" id="submit-btn">送出</button>
                 </div>
                 <div class="msg-board-view">
+                    <!-- <div class="view-comment-info">
+                        <div class="comment-info-text">
+                            <div class="info-text">測試測試測試</div>
+                        </div>
+                        <div class="comment-info-image">
+                            <img src="\static\img\photo.png" id="info-image01">
+                        </div>
+                    </div> -->
+
                     
                 </div>
             </div>
