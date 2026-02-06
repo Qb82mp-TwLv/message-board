@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yaml
+README.md
+
 # Distribution / packaging
 .Python
 build/
@@ -139,4 +146,3 @@ cython_debug/
 
 # macOS
 .DS_Store
-

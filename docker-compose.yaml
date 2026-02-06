@@ -1,0 +1,9 @@
+services:
+  web:
+    image: ugp1491/comment-board-test
+    ports:
+      - "8000:8000"
+    env_file:
+      - (檔案的絕對位置)/.env
+    volumes:
+      - (檔案的絕對位置)/.aws:/root/.aws:ro
