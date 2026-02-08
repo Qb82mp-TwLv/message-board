@@ -7,3 +7,12 @@ services:
       - (檔案的絕對位置)/.env
     volumes:
       - (檔案的絕對位置)/.aws:/root/.aws:ro
+      
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - (檔案的絕對位置)/nginx.conf:/etc/nginx/conf.d/commentboard.conf:ro
+
